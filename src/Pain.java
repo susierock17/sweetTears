@@ -100,36 +100,36 @@ public class Pain {
 
     }
 
-    public void functionFour(){
-        Map <Integer, Object> map = new HashMap<Integer, Object>();
-        Object o = new Object();
-        map.put(1, o);
-        System.out.println(map.get(1));
-        Set <Integer> set = new HashSet<Integer>();
-        set.add(1);
-        set.add(2);
-        set.add(6);
-        System.out.println(set);
-
-        LinkedList<Integer> ll = new LinkedList<Integer>();
-
-        ll.add(1);
-        ll.add(2);
-        ll.add(3);
-
-        System.out.print(ll.get(0));
-
-        StringBuffer str = new StringBuffer();
-        String str1= new String("Hello Kate!");
-        System.out.println("\n"+str1.length());
-        double d1 =Double.NaN;
-        double d2 =Double.NaN;
-        if(Double.compare(d1,d2)==0)
-            System.out.print("true");
-        String str2 = "true";
-        if(str2=="true")
-            System.out.print("true");
-    }
+//    public void functionFour(){
+//        Map <Integer, Object> map = new HashMap<Integer, Object>();
+//        Object o = new Object();
+//        map.put(1, o);
+//        System.out.println(map.get(1));
+//        Set <Integer> set = new HashSet<Integer>();
+//        set.add(1);
+//        set.add(2);
+//        set.add(6);
+//        System.out.println(set);
+//
+//        LinkedList<Integer> ll = new LinkedList<Integer>();
+//
+//        ll.add(1);
+//        ll.add(2);
+//        ll.add(3);
+//
+//        System.out.print(ll.get(0));
+//
+//        StringBuffer str = new StringBuffer();
+//        String str1= new String("Hello Kate!");
+//        System.out.println("\n"+str1.length());
+//        double d1 =Double.NaN;
+//        double d2 =Double.NaN;
+//        if(Double.compare(d1,d2)==0)
+//            System.out.print("true");
+//        String str2 = "true";
+//        if(str2=="true")
+//            System.out.print("true");
+//    }
 
     public boolean fuctionAnagram(String str1,String str2) {
         if (str1.length() != str2.length())
