@@ -8,6 +8,8 @@ import java.util.*;
  */
 public class Pain {
 
+
+
     public List<Object> list = new ArrayList<Object>();
 
     public static void main(String args[]){
@@ -97,6 +99,7 @@ public class Pain {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //huj
 
     }
 
