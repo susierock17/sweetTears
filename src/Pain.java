@@ -20,6 +20,13 @@ public class Pain {
         Integer i2 = 128;
 
         System.out.println(i1.equals(i2));
+        int[] mass1 = new int[2];
+        mass1[0]=1;
+
+        mass1[1] = scanner.nextInt();
+        mass1.toString();
+
+        System.out.println(mass1);
     }
 
     public void functionOne(){
@@ -149,6 +156,10 @@ public class Pain {
 
         int[] mass = {1, 12, 3};
         int[] mass1 = new int[2];
+        mass1[0]=1;
+        Scanner scanner = new Scanner(System.in);
+        mass1[1] = scanner.nextInt();
+        System.out.println(mass1);
         return true;
     }
 
