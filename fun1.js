@@ -1,40 +1,41 @@
 var FunLibrary = (function(){
-	var isType = function(obj,Type)
+	var whatType = function(obj)
 	{
-		return (obj instanceof Type) + " " + "type";
+		var type = toString.call(obj);
+		return toString.call(obj).substring(8, type.length-1);
 	}
 	return{
 		isArray:function(obj)
 		{
-			return isType(obj,Array);	
+			return whatType(obj)==="Array";	
 		},
 		isBoolean:function(obj)
 		{
-			return isType(obj,Boolean);
+			return whatType(obj)==="Boolean";
 		},
 		isDate:function(obj)
 		{
-			return isType(obj,Date);
+			return whatType(obj)==="Date";
 		},
 		isFunction:function(obj)
 		{
-			return isType(obj,Function);
+			return whatType(obj)==="Function";
 		},
 		isNumber:function(obj)
 		{
-			return isType(obj,Number);
+			return whatType(obj) === "Number";
 		},
 		isString:function(obj)
 		{
-			return isType(obj,String);
+			return whatType(obj)==="String";
 		},
 		isUndefined:function(obj)
 		{
-			return obj===undefined;
+			return whatType(obj)==="Undefined";
 		},
 		isNull:function(obj)
 		{
-			return (obj===null);
+			return whatType(obj)==="Null";
 		},
 		isNan:function(obj)
 		{
@@ -42,9 +43,21 @@ var FunLibrary = (function(){
 		}
 	}
 })();
-var number = new Number(2);
-console.log(FunLibrary.isNumber(number));
-
+var myFunction = function(){
+	var obj=5;
+};
+var obj = null;
+var p;
+var date = new Date('2/29/2014');
+console.log(FunLibrary.isArray([1,2,3]));
+console.log(FunLibrary.isNumber(5));
+console.log(FunLibrary.isBoolean(5>4));
+console.log(FunLibrary.isDate(date));
+console.log(FunLibrary.isFunction(myFunction));
+console.log(FunLibrary.isNan("Not a number!"));
+console.log(FunLibrary.isNull(obj));
+console.log(FunLibrary.isString("Hello!"));
+console.log(FunLibrary.isUndefined(p));
 
 
 
